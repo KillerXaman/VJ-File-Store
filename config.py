@@ -42,6 +42,7 @@ LOG_CHANNEL = os.getenv("LOG_CHANNEL", "")
 AUTO_DELETE = int(os.getenv("AUTO_DELETE", "0"))
 AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "0"))
 
+PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "1002078137418"))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002115684413')).split()]
