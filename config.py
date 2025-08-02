@@ -30,28 +30,17 @@ def is_enabled(value, default):
 # Ask Doubt on telegram @KingVJ01
       
 # Owner Information
-API_ID = int(environ.get("API_ID", "21692768"))
-API_HASH = environ.get("API_HASH", "4740976fc34afc2fc38e4a63a96f7a24")
-ADMINS = int(environ.get("ADMINS", "6822298543"))
 
-# Database Information
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://rahultarafdar017:5Hb28PZPcigD8n6a@cluster0.kub6zlj.mongodb.net/?retryWrites=true&w=majority")
-CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
-DB_URI = environ.get("DB_URI", "mongodb+srv://saminurmondal12:gWvCJXujWrJ81v27@cluster0.hsu4l0a.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = environ.get("DB_NAME", "vjbotz")
-
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
-# Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
-BOT_USERNAME = environ.get("BOT_USERNAME", "Movie9Boxbot") # your bot username without @
-PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
-
-# Auto Delete Information
-AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
-AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
+API_ID   = int(os.getenv("API_ID", ""))
+API_HASH = os.getenv("API_HASH", "")
+BOT_TOKEN= os.getenv("BOT_TOKEN", "")
+ADMINS   = list(map(int, os.getenv("ADMINS", "").split()))
+DB_URI   = os.getenv("DB_URI", "")
+CLONE_DB_URI = os.getenv("CLONE_DB_URI", "")
+URL      = os.getenv("URL", "")
+LOG_CHANNEL = os.getenv("LOG_CHANNEL", "")
+AUTO_DELETE = int(os.getenv("AUTO_DELETE", "0"))
+AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "0"))
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "1002078137418"))
